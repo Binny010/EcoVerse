@@ -1199,3 +1199,23 @@ input:checked + .slider:before {
 	background-color: #f0f0f0;
 }
 
+
+
+
+
+
+.main {
+            text-align: center;
+        }
+
+        .marq {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .geek1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            padding-bottom: 10px;
+        }
