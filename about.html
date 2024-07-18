@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EchoVerse</title>
+	<meta name="description" Content="Welcome to This Lyrics Website, Find lyrics to all your favorite songs and explore new music.">
+	<link rel="icon" type="image/png" href="favicon or etc.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>	
+	<div id="loading" class="loading"></div>
+	<header>
+		<h1>EchoVerse</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="contact.html">Contact</a></li><br><br>
+			</ul>
+		</nav>	
+		<section id="language">
+			<h2>Language</h2>
+			<select id="languageSelect">
+				<option value="en">English</Option>
+				<option value="hn">Hindi</Option>
+				<option value="fr">French</Option>
+				<option value="es">Spanish</Option>
+				<!-- Add more language options -->
+			</select>
+		</section>
+	</header>	
+	
+	<main>	
+		<section id="about">
+			<h2>About Us</h2>
+				<p>Welcome to My Lyrics Website, your number one source for all things lyrics. We're dedicated to giving you the very best lyrics, with a focus on quality, user- freindliness, and uniqueness.</p>
+				<p>Founded in 2024 by Vinod K. Aditya, My Lyrics Website has come a long way from its beginnings. When I first started out, My passion for music drove them to create this website so that My Lyrics Websites can offer you the best collection of lyrics.</p>
+				<p>We hope you enjoy our website as much as we enjoy offering it to you. if you have any questions or comments, please don't hesitate to contact us.</p>
+				<p>Sincerely,<br>Vinod K. Aditya</p>
+		</section>
+		
+		<section id="social-share">
+			<h3>Share This:</h3>
+			<div>
+				<button id="shareOnX">Share on X</button>
+				<button id="shareOnFacebook">Share on Facebook</button>
+			</div>
+		</section>
+		
+		<div id="commentSection">
+			<h3>Leave a Comment-<h3>
+			<form id="commentform">
+				<input type="text" id="commenterName" placeholder="Your Name" required>
+				<textarea id="commentText" placeholder="Write a Comment..." required></textarea>
+				<button type="submit">Post Comment</button>
+			</form>
+				<ul id="commentList"></ul>
+		</div>
+	</main>		
+					
+	<footer>
+		<p>&copy; 2024 Lyrics Website.</p>
+	</footer>
+		<section>
+			<button id="backToTop" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+			<button id="backToTop" title="Back To Top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+		</section>
+</body>
+</html>
+	

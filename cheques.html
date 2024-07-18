@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EchoVerse</title>
+	<meta name="description" Content="Welcome to This Lyrics Website, Find lyrics to all your favorite songs and explore new music.">
+	<link rel="icon" type="image/png" href="favicon or etc.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>EchoVerse</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="bollywood.html">Bollywood Songs</a></li>
+				<li><a href="Punjabi.html">Punjabi Songs</a></li>
+				<li><a href="hariyanvi.html">Hariyanvi Songs</a></li>
+				<li><a href="Garhwali.html">Garhwali songs</a></li>
+				<li><a href="kumauni.html">Kumani Songs</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<br><br>
+			</ul>
+		</nav>
+	</header>
+	<main>
+	<section id="audio-player">
+			<h2>Song Preview</h2>
+			<audio controls>
+				<source src="E:/coding folder/Lyrics Web/New lyrics sites/song-preview.mp3" type="audio/mpeg">
+				your browser does not support the audio element.
+			</audio>
+	</section>
+	<h2>Cheques-Song</h2><br>
+		<pre>
+			je koi shaq ni (Aah)<br>
+			Kari check ni (Brrr)<br>
+			Beeba jatt di aa challe sardari<br>
+			Lagge jeck ni (Nah)<br>
+			Wadde cheque ni<br>
+			Utte aale naal laayi betha yaari
+			<br><br>
+			Je koi shaq ni<br>
+			Kari check ni<br>
+			Beeba jatt di aa challe sardari<br>
+			Lagge jeck ni (Aah)<br>
+			Wadde cheque ni<br>
+			Utte aale naal laayi betha yaari
+			<br><br>
+			Rakhi akh ni<br>
+			Vairi kakh ni (Brrr)<br>
+			Game ghumdi aa bethe phone chak ni<br>
+			Piche jagg ni<br>
+			Laayi lagg ni (Haan)<br>
+			Laggi kyia de aa utte tak agg ni
+			<br><br>
+			Haan kauda lagda sbaah<br>
+			Puchi jara jaake naam challe than than<br>
+			Jatt tan pehli malli betha than<br>
+			Agge kdde aa bhulekhe kyi wari
+			<br><br>
+			Je koi shaq ni<br>
+			Kari check ni (Aah)<br>
+			Beeba jatt di aa challe sardari (Challe)<br>
+			Lagge jeck ni (Oh)<br>
+			Wadde cheque ni<br>
+			Utte aale naal laayi betha (Laayi betha)
+			<br><br>
+			Je koi shaq ni<br>
+			Kari check ni (Aah)<br>
+			Beeba jatt di aa challe sardari<br>
+			Lagge jeck ni<br>
+			Wadde cheque ni<br>
+			Utte aale naal laayi betha yaari
+			<br><br>
+			Jussa maarda ae thathan gabhru jawan da<br>
+			Tooti boldi ae jagg te zamana jaan da<br>
+			Sada rutba hi dekh vairi seena sarhda<br>
+			Baba bina hi talawan janda guddi chaad da
+			<br><br>
+			Jussa maarda ae thathan gabhru jawan da<br>
+			Tooti boldi ae jagg te zamana jaan da<br>
+			Sada rutba hi dekh vairi seena sarhda<br>
+			Baba bina hi talawan janda guddi chaad da
+			<br><br>
+			Tu na jaandi (Nah)<br>
+			Karobaar ni<br>
+			Jaali number plate laggi car di<br>
+			Saare yaar ni<br>
+			Bethe bahr ni<br>
+			Kadde jaan ni jo lagga dabb naal ni
+			<br><br>
+			Haan face utte aa glow (Haan)<br>
+			Puchi na tikaane sare rehnde aa ni low<br>
+			Ik do copy krde flow<br>
+			Thande krte aa billo kahdi kiti kalakaari
+			<br><br>
+			Je koi shaq ni<br>
+			Kari check ni (Aah)<br>
+			Beeba jatt di aa challe sardari (Challe)<br>
+			Lagge jeck ni<br>
+			Wadde cheque ni<br>
+			Utte aale naal laayi betha yaari
+			<br><br>
+			Je koi shaq ni<br>
+			Kari check ni (Aah)<br>
+			Beeba jatt di aa challe sardari<br>
+			Lagge jeck ni<br>
+			Wadde cheque ni<br>
+			Utte aale naal laayi betha yaari
+			<br><br><br><br>
+		</pre>
+		
+		<!-- Modal --!>
+	<div id="lyricsModal"class="Modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2 id="modalTitle"></h2>
+			<pre id="modalLyrics"></pre>
+			<div id="ratingSelection">
+				<h3>Rate this Lyrics:</h3>
+				<div id"ratingStars">
+					<span class="star" sata-value="1">&#9733;</span>
+					<span class="star" sata-value="2">&#9733;</span>
+					<span class="star" sata-value="3">&#9733;</span>
+					<span class="star" sata-value="4">&#9733;</span>
+					<span class="star" sata-value="5">&#9733;</span>
+				</div>
+				<span id="averageRating">0.0</span>
+			</div>		
+			<div class="social-share">
+				<button onclick="shareOnX()">Share on X</button>
+				<button onclick="shareOnFacebook()">Share on Facebook</button>
+			</div>
+			<div id="likeSelection">
+				<button id="likebutton"><i class=fas fa-thumbs-up"></i> Like</button>
+				<span id="likeCount">0</span>
+			</div>
+			<div id="commentSection">
+				<h3>Comments<h3>
+				<input type="text" id="commentSearch" placeholder="Search comments...">
+				<form id="commentform">
+					<input type="text" id="commenterName" placeholder="Your Name" required>
+					<textarea id="commentText" placeholder="Your Comment" required></textarea>
+					<button type="submit">Post Comment</button>
+				</form>
+				<ul id="commentList"></ul>
+			</div>
+		</div>
+	</div>
+	</main>
+	
+	<footer>
+	<p>&copy; 2024 Lyrics Website.</p>
+	</footer>
+	
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EchoVerse</title>
+	<meta name="description" Content="Welcome to This Lyrics Website, Find lyrics to all your favorite songs and explore new music.">
+	<link rel="icon" type="image/png" href="favicon or etc.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>EchoVerse</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="bollywood.html">Bollywood Songs</a></li>
+				<li><a href="Punjabi.html">Punjabi Songs</a></li>
+				<li><a href="hariyanvi.html">Hariyanvi Songs</a></li>
+				<li><a href="Garhwali.html">Garhwali songs</a></li>
+				<li><a href="kumauni.html">Kumani Songs</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<br><br>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>"Hamari Adhuri Kahani" - Lyrics</h2><br>
+		<pre>
+			Pass aaye, duriyaan phir bhi kaam naa hui<br>
+			Ek adhuri si hamari kahani rahi<br>
+			Aasmaan ko zameen ye jaruri nahi jaa mile, jaa mile<br>
+			Ishq sacha wohi jisko milti nahi manzilein, manzilein
+			<br><br>
+			Rang the, noor tha, jab kareeb tu tha<br>
+			Ek jannat sa tha, ye jahan<br>
+			Waqt ki ret pe kuch mere naam sa<br>
+			Likh ke choor gaya, tu kahan?
+			<br><br>
+			[Chorus]<br>
+			Hamari adhuri kahani<br>
+			Hamari adhuri kahani<br>
+			Hamari adhuri kahani<br>
+			Hamari adhuri kahani
+			<br><br>
+			Khusbuon se teri yunhi takra gaye<br>
+			Chalte-chalte dekho naa, hum kahan aa gaye<br>
+			Janntein agar yahi, tu dihkhe kyun nahi<br>
+			Chand suraj sabhi hai yahan<br>
+			Intezaar tera sadiyon se kar raha<br>
+			Pyaasi behti hai kab se yahaan
+			<br><br>
+			[Chorus]<br
+			Hamari adhuri kahani<br>
+			Hamari adhuri kahani<br>
+			Hamari adhuri kahani<br>
+			Hamari adhuri kahani
+			<br><br>
+			[Verse 3]<br>
+			Pyaas ka ye safar kahatam ho jayega<br>
+			Kuch adhura sa jo tha pura ho jayega<br>
+			Jhuk gaya aasmaan, mil gaye do jaahan<br>
+			Har taraf hai milan ka sama<br>
+			Doliyan hai saji, khusbuyein kar kahin<br>
+			Padhne aaya khuda khud yahan
+			<br><br>
+			[Chorus]<br>
+			Hamari adhuri kahani<br>
+			Hamari adhuri kahani<br>
+			Hamari adhuri kahani
+			<br><br><br><br>
+		</pre>
+		
+	<!-- Modal --!>
+	<div id="lyricsModal"class="Modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2 id="modalTitle"></h2>
+			<pre id="modalLyrics"></pre>
+			<div id="ratingSelection">
+				<h3>Rate this Lyrics:</h3>
+				<div id"ratingStars">
+					<span class="star" sata-value="1">&#9733;</span>
+					<span class="star" sata-value="2">&#9733;</span>
+					<span class="star" sata-value="3">&#9733;</span>
+					<span class="star" sata-value="4">&#9733;</span>
+					<span class="star" sata-value="5">&#9733;</span>
+				</div>
+				<span id="averageRating">0.0</span>
+			</div>		
+			<div class="social-share">
+				<button onclick="shareOnX()">Share on X</button>
+				<button onclick="shareOnFacebook()">Share on Facebook</button>
+			</div>
+			<div id="likeSelection">
+				<button id="likebutton"><i class=fas fa-thumbs-up"></i> Like</button>
+				<span id="likeCount">0</span>
+			</div>
+			<div id="commentSection">
+				<h3>Comments<h3>
+				<input type="text" id="commentSearch" placeholder="Search comments...">
+				<form id="commentform">
+					<input type="text" id="commenterName" placeholder="Your Name" required>
+					<textarea id="commentText" placeholder="Your Comment" required></textarea>
+					<button type="submit">Post Comment</button>
+				</form>
+				<ul id="commentList"></ul>
+			</div>
+		</div>
+	</div>
+
+	</main>
+	<footer>
+		<p>&copy; 2024 Lyrics Website.</p>
+	</footer>
+</body>
+</html>

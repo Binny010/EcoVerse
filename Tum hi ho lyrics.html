@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EchoVerse</title>
+	<meta name="description" Content="Welcome to This Lyrics Website, Find lyrics to all your favorite songs and explore new music.">
+	<link rel="icon" type="image/png" href="favicon or etc.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>EchoVerse</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="bollywood.html">Bollywood Songs</a></li>
+				<li><a href="Punjabi.html">Punjabi Songs</a></li>
+				<li><a href="hariyanvi.html">Hariyanvi Songs</a></li>
+				<li><a href="Garhwali.html">Garhwali songs</a></li>
+				<li><a href="kumauni.html">Kumani Songs</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<br><br>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>Tum hi ho-Lyrics</h2><br>
+		<pre>
+			Hum tere bin ab reh nahi sakte<br>
+			Tere bina kya wajood mera
+			<br><br>
+			Hum tere bin ab reh nahi sakte<br>
+			Tere bina kya wajood mera
+			<br><br>
+			Tujhse juda gar ho jaayenge<br>
+			Toh khud se hi ho jaayenge judaa
+			<br><br>
+			Kyunki tum hi ho<br>
+			Ab tum hi ho<br>
+			Zindagi ab tum hi ho<br>
+			Chain bhi, mera dard bhi
+			<br><br>
+			Meri aashiqui ab tum hi ho
+			<br><br>
+			Tera mera rishta hai kaisa<br>
+			Ik pal door gawara nahi<br>
+			Tere liye har roz hai jeete<br>
+			Tujh ko diya mera waqt sabhi<br>
+			Koi lamha mera na ho tere bina<br>
+			Har saans pe naam tera
+			<br><br>
+			Kyunki tum hi ho<br>
+			Ab tum hi ho<br>
+			Zindagi ab tum hi ho<br>
+			Chain bhi, mera dard bhi
+			<br><br>
+			Meri aashiqui ab tum hi ho
+			<br><br>
+			Tere liye hi jiya main<br>
+			Khud ko jo yun de diya hai<br>
+			Teri wafa ne mujhko sambhala<br>
+			Saare ghamon ko dil se nikala<br>
+			Tere saath mera hai naseeb juda<br>
+			Tujhe paake adhoora naa raha hmm..
+			<br><br>
+			Kyunki tum hi ho<br>
+			Ab tum hi ho<br>
+			Zindagi ab tum hi ho..<br>
+			Chain bhi, mera dard bhi<br>
+			Meri aashiqui ab tum hi ho (whole x2)
+			<br><br><br><br>
+		</pre>
+		
+	<!-- Modal --!>
+	<div id="lyricsModal"class="Modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2 id="modalTitle"></h2>
+			<pre id="modalLyrics"></pre>
+			<div id="ratingSelection">
+				<h3>Rate this Lyrics:</h3>
+				<div id"ratingStars">
+					<span class="star" sata-value="1">&#9733;</span>
+					<span class="star" sata-value="2">&#9733;</span>
+					<span class="star" sata-value="3">&#9733;</span>
+					<span class="star" sata-value="4">&#9733;</span>
+					<span class="star" sata-value="5">&#9733;</span>
+				</div>
+				<span id="averageRating">0.0</span>
+			</div>		
+			<div class="social-share">
+				<button onclick="shareOnX()">Share on X</button>
+				<button onclick="shareOnFacebook()">Share on Facebook</button>
+			</div>
+			<div id="likeSelection">
+				<button id="likebutton"><i class=fas fa-thumbs-up"></i> Like</button>
+				<span id="likeCount">0</span>
+			</div>
+			<div id="commentSection">
+				<h3>Comments<h3>
+				<input type="text" id="commentSearch" placeholder="Search comments...">
+				<form id="commentform">
+					<input type="text" id="commenterName" placeholder="Your Name" required>
+					<textarea id="commentText" placeholder="Your Comment" required></textarea>
+					<button type="submit">Post Comment</button>
+				</form>
+				<ul id="commentList"></ul>
+			</div>
+		</div>
+	</div>
+
+	</main>
+	<footer>
+		<p>&copy; 2024 Lyrics Website.</p>
+	</body>
+	</html>

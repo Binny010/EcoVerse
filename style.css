@@ -1,0 +1,1201 @@
+/* Basic reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto;
+	background-color: #f0f0f0;
+	color: #333;
+	line-height: 1.6;
+	padding: 20px;
+}
+
+/* Header and Navigation Styling */
+header {
+	background-color: #333;
+	color: white;
+	padding: 20px 0;
+	text-align: center;
+}
+
+header h1 {
+	margin-bottom: 10px;
+}
+
+header h1, h2 {
+	font-weight: 700;
+}
+
+nav u1 {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 10px;
+	margin: 5px 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	background-color: #555;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+	background-color: #777;
+}
+
+/* Dark Mode */
+body.dark-Mode {
+	background-color: #121212;
+	color: #e0e0e0;
+}
+
+header.dark-mode {
+	background-color: #333;
+}
+
+nav ul li a.dark-mode {
+	background-color: #666;
+}
+
+nav ul li a.dark-mode:hover {
+	background-color: #666
+}
+
+/* Loading animation */
+.loading {
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120 px;
+	animation: spin 2s liner infinite;
+	z-index: 9999;
+}
+
+@keyframe spin {
+	0% { transform: rotate(0deg);}
+	100% { transform: rotate(360deg);}
+}
+
+/* Main Content Styling */
+main {
+	margin-top: 20px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main input[type="text"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: block;
+	transition: background-color 0.3s;
+}
+
+main ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+main ul li {
+	margin: 5px 0;
+}
+
+main ul li a {
+	text-decoration: none;
+	color: #333;
+	background-color: #fff;
+	padding: 10px 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: block;
+	transition: background-color 0.3s;
+}
+
+main ul li a:hover {
+	background-color: #eee;
+}
+
+h2 {
+	text-align: center;
+}
+
+pre {
+	font-family: Roboto;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 520;
+	line-height: 0.8;
+	
+}
+
+/* Footer Styling */
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+	margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	nav ul li {
+		margin: 5px 0;
+	}
+}
+
+/* Modal Styling */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+	padding-top: 60px;
+}
+
+.modal.content {
+	background-color: #fefefe;
+	margin: 5% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 600px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: 700;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer
+}
+
+/* Social Share Button */
+.social-share button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 10px 5px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.social-share button i {
+	font-size: 16px;
+}
+
+.social-share button:hover {
+	background-color: #ddd;
+}
+	
+/* Highlight text styling */
+.highlight {
+	background-color: yellow;
+	font-weight: 700;
+}
+
+/* Pagination Styling */
+#paginaiton {
+	margin-top: 20px;
+	text-align: center;
+}
+.page-btn {
+	padding: 8px 16px;
+	margin: 0 5px; 
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+	cursor: pointer;
+}
+
+/page-btn:hover {
+	background-color: #e0e0e0;
+}
+
+.page-link {
+	margin: 0 5px;
+	padding: 10px 15px;
+	background-color: #333;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.page-link:hover {
+	background-color: #555;
+}
+
+.page-link.active {
+	background-color: #777;
+}
+
+/* Contact Form Styling */
+#contact {
+	margin-top: 40px;
+}
+
+#contact h2 {
+	margin-bottom:20px;
+}
+
+#contactForm {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+#contactForm label {
+	margin: 10px 0 5px;
+}
+
+#contactForm input, #contactForm textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+#contactForm button {
+	padding: 10px;
+	background-color: #333;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#contactform button:hover {
+	background-color: #555;
+}
+
+#formStatus {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* Favorites List Styling */
+#Favorites {
+	margin-top: 40px;
+}
+
+#Favorites h2 {
+	margin-bottom: 20px;
+}
+
+#FavoritesList {
+	list-style-type: none;
+	padding: 0;
+}
+
+#Favorites li {
+	margin: 5px 0;
+}
+
+#FavoritesList li a {
+	text-decoration: none;
+	color: #333;
+	background-color: #fff;
+	padding: 10px 20px;
+	border: 1px solid #ccc;
+	border-radius': 5px;
+	display: block;
+	transition: background-color 0.3s;
+}
+
+#FavoritesList li a:hover {
+	background-color: #eee;
+}
+
+/* Smooth transition for links */
+a, button {
+	transition: all 0.3s ease;
+}
+
+/* Fade in animation for modal */
+@keyframe fadeIn {
+	from { opacity: 0; }
+	to { opacity:1; }
+}
+
+.modal-content {
+	animation: fadeIn 0.5s;
+}
+
+/* Highlight animation for search results */
+.highlight {
+	background-color: yellow;
+	animation: highlight 1s ease;
+}
+
+@keyframe highlight {
+	from { backgroun-color: yellow; }
+	to { background-color: transparent }
+}
+
+/* Back-to-Top Button */
+#backToTop {
+	display: none; /* Hidden by default */
+	position: fixed; /* fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline : none; /* Remove outline */
+	background-color: #333; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* add a mouse pointer color */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+	transition: background-color 0.3s; /* smooth transition for hover */
+}
+
+#backToTop:hover {
+	background-color: #555; /* Add a dark-gray background on hover */
+}
+
+/* Tool container */
+.tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+	visibility:Hidden;
+	width: 120px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%; /* Position the tooltip above the text */
+	left: 50%;
+	margin-left: -60px;
+	opacity:0;
+	transition: opacity 0.3s;
+}
+
+/* Tooltip container */
+.Tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+	visibility: Hidden;
+	width: 120px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%; /* Position the tooltip above the text */
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+	Content: "";
+	position: absolute;
+	top: 100%; /* At the bottom of the tooltip */
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #333 transparent transparent transparent;
+}
+
+/* Show the tooltip text when your mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+	nav ul {
+		flex-direction: column;
+	}
+	
+	nav ul li {
+		margin: 10px 0;
+	}
+	
+	main {
+		padding: 10px;
+	}
+	
+	.modal-content {
+		width: 90%;
+	}
+}
+
+/* For mobile phones */
+@media (max-width: 480pz) {
+	header, footer {
+		padding; 10px 0;
+	}
+	
+	nav ul {
+		flex-direction: column;
+		padding: 0;
+	}
+	
+	nav ul li {
+		margin: 5px 0;
+	}
+	
+	nav ul li a {
+		padding: 10px;
+	}
+	
+	main input[type="text"] {
+		width: 100%;
+	}
+	
+	.modal-content {
+		width: 100%;
+	}
+	
+	#contactForm {
+		width: 100%;
+	}
+	
+	#BacktoTop {
+		padding: 10px;
+		font-size: 16px;
+	}
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	List-style-type: none;
+	padding: 0;
+}
+
+footer nav ul li {
+	margin: 5px 10px;
+}
+
+footer nav ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+footer nav ul li a:hover {
+	background-color: #555;
+}
+/* Comment Section Styling */
+#commentSection {
+	margin-top: 20px;
+}
+
+#commentForm {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+#commentForm input, #commentForm textarea {
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#commentForm button {
+	padding: 10px;
+	background-color: #333;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#commentForm button:hover {
+	background-color: #555;
+}
+
+#commentList {
+	list-style-type: none;
+	padding: 0;
+}
+
+#commentList li {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+/* Like Button Styling */
+#likeSelection {
+	margin-top: 20px;
+}
+
+#likeButton {
+	padding: 10px;
+	background-color: #333;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: backgroun-color 0.3s;
+}
+
+#likeButton:hover {
+	background-color: #555;
+}
+
+#likeCount {
+	margin-left: 10px;
+	font-size: 10px;
+}
+
+body {
+	color: #333; /* Ensure text color contrasts well with the baxkground */
+	background-color: #fff; /* Ensure background color contrasts well with text */
+}
+
+.dark-mode body {
+	background-color: #121212; /* Dark mode background *//
+	color: #e0e0e0; /* Dark mode text color */
+}
+
+/* Rating Stars Styling */
+#ratingSelection {
+	margin-top: 20px;
+}
+
+#ratingStars {
+	display : flex;
+	cursor: pointer;
+	font-size: 30px;
+	color: #FFD700; /* Gold */
+}
+
+#ratingStars .star {
+	font-size: 24px;
+	color: #ccc;
+	transition: color 0.3s;
+}
+
+#ratingStars .star:hover,
+#ratingStars .star:hover - .star {
+	color: #ffcc00;
+}
+
+#averageRating {
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+/* Contact Modal Styling */
+#contactModal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /*sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color *//
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	padding-top: 60px;
+}
+
+#contactModal .modal-content {
+	background-color: #fefefe;
+	margin: 5% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#contactModal .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+#contactModal .color:hover,
+#contactModal .close:hover {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#contactForm {
+	display: flex;
+	flex-direction: column;
+}
+
+#contactForm label {
+	margin: 10px 0 5px;
+}
+
+#contactForm input, #contactForm textarea {
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#contactForm buttom {
+	padding: 10px;
+	background-color: #333;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#contactForm button:hover {
+	background-color: #555;
+}
+
+/* Toggle Switch Styling */
+.Switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: 0.4s;
+	border-radius: 34px;
+}
+
+.slider:before {
+	position: absolute;
+	Content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+input:checked + .slider {
+	background-color: #2196F3; /* Blue */
+}
+
+input:checked + .slider:before {
+	transform: tranlateX(26px);
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+	background-color: #121212;
+	color: #e0e0e0;
+}
+
+header.dark-mode {
+	background-color: #1e1e1e;
+}
+
+footer.dark-mode {
+	background-color: #1e1e1e;
+}
+
+.dark-mode a {
+	color: #90caf9;
+}
+
+.dark-mode .song-list li {
+	background-color: #333;
+	color: #e0e0e0;
+}
+
+/* Image Gallery Styling */
+#Gallery {
+	padding: 20px;
+	text-align: center;
+}
+
+.gallery-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery-item {
+	margin: 10px;
+	transition: transform 0.2s;
+}
+
+.gallery-item img {
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+}
+
+.gallery-item p {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.gallery-item:hover {
+	transform: scale(1.1);
+}
+
+/* Testimonials Section Styling */
+#testimonials {
+	padding: 40px 20px;
+	background-color: #f9f9f9;
+	text-align: center;
+}
+
+.testimonials-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.testimonial-item {
+	margin: 10px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: white;
+	width: 300px;
+}
+
+.testimonial-item p {
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.testimonial-item h4 {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+/* Newsletter Subscribtion Styling */
+#newsletter {
+	padding: 40px 20px;
+	background-color: #333;
+	color: white;
+	text-align: center;
+}
+
+#newsletterForm {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+#newsletterForm input {
+	padding: 10px;
+	margin-right: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+#newsletterForm button {
+	padding: 10px;
+	background-color: #ffcc00;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#newsletterForm button:hover {
+	background-color: #e6b800;
+}
+
+/* FAQ Section Styling */
+#faq {
+	padding: 40px 20px;
+	background-color: #f9f9f9;
+}
+
+.faq-item {
+	margin-bottom: 20px;
+}
+
+.faq-item h3 {
+	margin-bottom: 10px;
+}
+
+.faq-item p {
+	margin-left: 20px;
+}
+
+/* About Us Section Styling */
+#about {
+	padding: 40px 20px;
+	background-color: #fefefe;
+	text-align: center;
+}
+
+#about p {
+	margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.gallery-container, .testimonial-container {
+		flext-direction: column;
+	}
+	
+	.gallery-item, .testimonial-item {
+		width: 90%;
+		margin: 10px auto;
+	}
+	
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	nav ul li {
+		margin-bottom: 10px;
+	}
+	
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	header input, header button {
+		width: 90%;
+		margin: 10px 0;
+	}
+	
+	#lyricsModal .modal-content {
+		width: 90%;
+	}
+	
+	.social-share button {
+		width: 90%;
+		margin: 5px 0;
+	}
+	
+	
+/* Login Button Styling */
+header button#loginButton {
+	padding: 10px 20px;
+	background-color: #333;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+header button#loginButton:hover {
+	background-color: #555;
+}
+
+/* Error Section Styling */
+#error {
+	padding: 40px 20px;
+	background-color: #f44336;
+	color: white;
+	text-align: center;
+}
+
+/* Bookmark Button Styling */
+.bookmark-btn {
+	padding: 8px 16px;
+	background-color: #2196f3;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.bookmark-btn:hover {
+	background-color: #0d47a1;
+}
+
+/* Related Songs Section Styling */
+#related-songs {
+	padding: 20px;
+	text-align: center;
+}
+
+.related-song-list {
+	list-style: none;
+	padding: 0;
+}
+
+.related-song-list {
+	list-style: none;
+	padding: 0;
+}
+
+.related-song-list li {
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.related-song-list li:hover {
+	color: #2196F3;
+}
+
+/* Audio Player Styling */
+#audio-player {
+	padding: 20px;
+	text-align: center;
+}
+
+audio {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+/* Accessibility Option Styling */
+#accessibility{
+	padding: 20px;
+	text-align: center;
+}
+
+#accessibility button{
+	padding: 10px 20px;
+	margin: 10px;
+	background-color: #333;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s; 
+}
+
+#accessibility button:hover {
+	background-color: #555;
+}
+
+/* Social Share Styling */
+#social-share {
+	padding: 20px;
+	text-align: center;
+}
+
+#social-share button{
+	padding: 10px 20px;
+	margin: 10px;
+	background-color: #0077B5; /* LinkedIn Blue */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: backgroun-color 0.3s;
+}
+
+#social-share button:hover {
+	background-color: #004E7C;/* Darker Linked Blue */
+}
+
+/* User Profile Styling */
+#user-profile {
+	padding: 20px;
+}
+
+#profileInfo{
+	margin-bottom: 20px;
+}
+
+#editPrifle, #logout {
+	padding: 8px 16px;
+	margin-right: 10px;
+	background-color: #f44336; /* Red */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#editProfile:hover, #logout:hover{
+	background-color: #cc0000; /* Darker Red /*
+}
+
+/* CMS Styling */
+#cms{
+	padding: 20px;
+}
+
+#cms ul {
+	list-style: none;
+	padding: 0;
+}
+
+#cms li {
+	margin-bottom: 10px;
+}
+
+#cms a {
+	padding: 8px 16px;
+	background-color: #2196F3; /* Blue */
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+#cms a:hover {
+	background-color: #0d$7a1; /* Darker Blue */
+}
+
+/* Dark Mode Toggke Styling */
+#dark-mode {
+	padding: 20px;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color : #ccc;
+	transition: 0.4s;
+	border-radius: 34px;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+input:checked + .slider {
+	background-color: #2196F3; /* Blue */
+}
+
+input:checked + .slider:before {
+	transform: translateX(26px);
+}
+
+/* Search Suggestions Styling */
+#search-Suggestions {
+	padding: 20px;
+}
+
+#SuggestionList {
+	list-style: none;
+	padding: 0;
+}
+
+#SuggestionList li {
+	padding: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#SuggestionList li:hover{
+	background-color: #f0f0f0;
+}
+

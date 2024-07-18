@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EchoVerse</title>
+	<meta name="description" Content="Welcome to This Lyrics Website, Find lyrics to all your favorite songs and explore new music.">
+	<link rel="icon" type="image/png" href="favicon or etc.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div id="loading" class="loading"></div>
+	<header>
+		<h1>EchoVerse</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="bollywood.html">Bollywood Songs</a></li>
+				<li><a href="punjabi.html">Punjabi Songs</a></li>
+				<li><a href="hariyanvi.html">Hariyanvi Songs</a></li>
+				<li><a href="garhwali.html">Garhwali songs</a></li>
+				<li><a href="kumauni.html">Kumauni Songs</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<br><br>
+			</ul>
+		</nav>
+		<br>
+		
+		<button id="loginButton">login</button>
+		<button id="randomSongButton">Random Song</button>
+		<input type="text" id="lyricsSearch" placeholder="Search lyrics...">
+		<label class="switch">
+			<input type="checkbox" id="themeToggle"
+			<span class="slider round"></span>
+		<button id="darkModeToggle">Dark Mode</button>
+		<section id="language">
+			<h2>Language Option</h2>
+			<select id="languageSelect">
+				<option value="en">English</Option>
+				<option value="hn">Hindi</Option>
+				<option value="fr">French</Option>
+				<option value="es">Spanish</Option>
+				<!-- Add more language options -->
+			</select>
+		</section>	
+	</header>
+	
+	<main>
+		<section id="audio-player">
+			<h2>Song Previews</h2>
+			<audio controls>
+				<source src="E:/coding folder/Lyrics Web/New lyrics sites/song-preview.mp3" type="audio/mpeg">
+				your browser does not support the audio element.
+			</audio>
+		</section>
+
+		<h2>Welcome to the EchoVerse</h2>
+		<input type="text" id="search" placeholder="search for a song...">
+				
+		<section id="search-suggestions">
+			<h2>Search suggestions</h2>
+			<ul id="suggestionList">
+				<!-- suggestions will be dynamically added here -->
+			</ul>
+		</section>
+		
+		<ul id="songList">
+			<li><a href="javascript:void(0)" onclick="showLyrics('Song 1', 'Kaise tu gungunaye muskuraye...')">Song 1</a></li>
+			<li><a href="javascript:void(0)" onclick="showLyrics('Song 2', 'Je koi shaq ni (Aah)...')">Song 2</a></li>
+			<!-- Add more songs as needed -->
+		</ul>
+		
+		<section id="related-songs">
+			<h2>Related Songs</h2>
+			<ul class="related-songs-list">
+				<li>Related Song 1</li>
+				<li>Related Song 2</li>
+				<li>Related Song 3</li>
+				<!-- Add dynamically based on selected song -->
+			</ul>
+		</section>
+
+		<section id="gallery">
+			<h2>Artist Gallery</h2>
+			<div class="gallery-container">
+				<div class="gallery-item">
+				<img src="E:/coding folder/Lyrics Web/New lyrics sites/images/cheques.jpg" alt="cheques song lyrics - subh">
+				<p>Artist : Shubh</p>
+				</div>
+				<div class="gallery-item'>
+					<img src="image/artist2.jpg" alt="Artist 2">
+					<p>Artist 2</p>
+				</div>
+				<div class="gallery-item'>
+					<img src="image/artist3.jpg" alt="Artist 3">
+					<p>Artist 3</p>
+				</div>
+				<!-- Add more items as needed -->
+			</div>
+		</section>
+		
+		<section id="lyrics">
+			<h2>Popular Lyrics</h2>
+			<ul class="song-list">
+				<li>
+					<h3>Song Title 1</h3>
+					<img src="song1.jpg" alt="Song 1" loading="lazy">
+					<p>Lyrics for Song 1...</p>
+					<button class="bookmark-btn">Bookmark</button>
+				</li>
+				<li>
+					<h3>Song Title 2</h3>
+					<img src="song2.jpg" alt="Song 2" loading="lazy">
+					<p>Lyrics for Song 2...</p>
+					<!-- Add more songs with lazy loading image -->
+				<li>Song 2</li>
+				<li>Song 3</li>
+				<li>Song 4</li>
+				<li>Song 5</li>
+				<li>Song 6</li>
+				<li>Song 7</li>
+				<li>Song 8</li>
+				<li>Song 9</li>
+				<li>Song 10</li>
+				<li>Song 11</li>
+				<li>Song 12</li>
+				<li>Song 13</li>
+				<li>Song 14</li>
+				<li>Song 15</li>
+				<li>Song 16</li>
+				<!-- Add more songs as needed -->
+				<!-- Contant will be dynamically rendered -->
+			</ul>
+			
+			<div id="pagination">
+				<button class="page-btn">1</button>
+				<button class="page-btn">2</button>
+				<button class="page-btn">3</button>
+				<!-- Add more pagination buttons dynamically with JavaScript -->
+				<!-- Pagination buttons will be dynamically rendered -->
+			</div>
+			
+		</section>
+		
+		<section id="favorites">
+			<h2>favorites</h2>
+			<ul id="favoritesList"></ul>
+		</section>
+				
+		<section id="testimonials">
+			<h2>User Testimonials</h2>
+			<div class="testimonial-container">
+				<div class="testimonial-item">
+					<p>"This website is amaging! I found all my favorite lyrics here."</p>
+					<h4>- User 1</h4>
+				<div class="testimonial-item">
+					<p>"Great collection of songs. Easy to navigate and use."</P>
+					<h4>- User 2</h4>
+				</div>
+				<div class="testimonial-item">
+					<p>"Love the design and functionality. Highly recommended!"</p>
+					<h4>- User 3</h4>
+				</div>
+				<!-- Add more testimonials as needed -->
+			</div>
+		</section>
+
+		<section id="faq">
+			<h2>Frequently Asked Questions</h2>
+			<div class="faq-item">
+				<h3>How do I search for lyrics?</h3>
+				<p>Use the search bar at the top of the page to find lyrics by song title or artist.</p>
+			</div>
+			<div class="faq-item">
+				<h3>Can I share lyrics on social media?</h3>
+				<p>Yes, you can share lyrics on X and Facebook using the share button in the lyrics modal.</p>
+			</div>
+			<div class="faq-item">
+				<h3>How can I contact you?</h3>
+				<p>You can use the 'Contact Us' button to open the contact form and send us a Message.</p>
+			</div>
+			<!-- Add more FAQ as needed -->
+		</section>
+
+		<section id="newsletter">
+			<h2>Subscribe to our Newsletter</h2>
+			<form id="newsletterForm">
+				<input type="email" id="neasletterEmail" placeholder="Enter your email" required>
+				<button type="submit">Subscribe</button>
+			</form>
+		</section>
+	
+		<section>
+		<!-- Contact Modal -->
+		<div id="contactModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+			<h2>Contact Us</h2>
+			<form id="contactForm">
+				<label for="contactName">Name:</label>
+				<input type="text" id="contactName" name="contactName" required>
+				<label for="contactEmail">Email:</label>
+				<input type="email" id="contactEmail" name="contactEmail" required>
+				<label for="contactMessage">Message:</label>
+				<textarea id="contactMessage" name="contactMessage" required></textarea>
+				<button type="submit">Send Message</button>
+			</form>
+			</div>
+		</div>
+
+			<section id="social-share">
+				<h2>Share This Song</h2>
+				<div>
+					<button id="shareOnX">Share on X</button>
+					<button id="shareOnFacebook">Share on Facebook</button>
+				</div>
+			</section>
+			
+
+		<!-- Add a button to open the contact modal -->
+		<button id="contactButton">Contact Us</buttom>
+		</section>
+		
+	</main>
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="Bollywood.html">Bollywood Songs</a></li>
+				<li><a href="Punjabi.html">Punjabi Songs</a></li>
+				<li><a href="hariyanvi.html">Hariyanvi Songs</a></li>
+				<li><a href="Garhwali.html">Garhwali songs</a></li>
+				<li><a href="Kumauni.html">Kumauni Songs</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<br><br>
+			</ul>
+		</nav>
+		<p>&copy; 2024 Lyrics Website.</p>
+	</footer>
+	
+	<!-- Modal --!>
+	<div id="lyricsModal"class="Modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2 id="modalTitle"></h2>
+			<pre id="modalLyrics"></pre>
+			<div id="ratingSelection">
+				<h3>Rate this Lyrics:</h3>
+				<div id"ratingStars">
+					<span class="star" sata-value="1">&#9733;</span>
+					<span class="star" sata-value="2">&#9733;</span>
+					<span class="star" sata-value="3">&#9733;</span>
+					<span class="star" sata-value="4">&#9733;</span>
+					<span class="star" sata-value="5">&#9733;</span>
+				</div>
+				<span id="averageRating">4.5</span>
+			</div>		
+			<div class="social-share">
+				<button onclick="shareOnX()">Share on X</button>
+				<button onclick="shareOnFacebook()">Share on Facebook</button>
+			</div>
+			
+			
+			<div id="likeSelection">
+				<button id="likebutton"><i class=fas fa-thumbs-up"></i> Like</button>
+				<span id="likeCount">0</span>
+			</div>
+			<div id="commentSection">
+				<h3>Comments<h3>
+				<input type="text" id="commentSearch" placeholder="Search comments...">
+				<form id="commentform">
+					<input type="text" id="commenterName" placeholder="Your Name" required>
+					<textarea id="commentText" placeholder="Your Comment" required></textarea>
+					<button type="submit">Post Comment</button>
+				</form>
+				<ul id="commentList"></ul>
+			</div>
+		</div>
+	</div>
+
+		<section id="user-profile">
+			<h2>User Profile</h2>
+			<div id="profileInfo">
+				<p>Name: Vinod K. Aditya</p>
+				<p>Email: Vaditya.00@hotmail.com</p>
+				<!-- Add more user information -->
+			<div>
+			<button id="editProfile">Edit Profile</button>
+			<button id="logout">Logout</button>
+		</section>
+
+		<section id="accessibility">
+			<h2>Accessibility Options</h2>
+			<ul>
+				<li><button id="increaseFontSize">increase Font Size</button></li>
+				<li><button id="decreaseFontSize">Decrease Font Size</button></li>
+				<li><button id="toggleContrast">Toggle High Contrast</button></li>
+			</ul>
+		</Section>
+
+
+		<section id="dark-mode">
+			<h2>Dark Mode</2>
+			<label class="Switch">
+				<input type="checkbox" id="darkModeToggle">
+				<span class="slider"></span>
+			</label>
+		</section>
+		
+		<button id="darkModeToggle" class="tooltip">Toggle Dark Mode
+			<span class="tooltotext">Switch between light and dark mode</span>
+		</button>
+		
+		<button id="backToTop" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+		<button id="backToTop" title="Back To Top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+</body>
+</html>
