@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>EchoVerse</title>
+	<title>0.EchoVerse</title>
 	<meta name="description" Content="Welcome to This Lyrics Website, Find lyrics to all your favorite songs and explore new music.">
 	<link rel="icon" type="image/png" href="favicon or etc.png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
@@ -15,30 +15,25 @@
 	<div id="loading" class="loading"></div>
 	<header>
 		<h1>EchoVerse</h1>
-		<nav>
+		<nav class="menu" id="menu">
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li><a href="bollywood.html">Bollywood Songs</a></li>
-				<li><a href="punjabi.html">Punjabi Songs</a></li>
+				<li><a href="Bollywood.html">Bollywood Songs</a></li>
+				<li><a href="Punjabi.html">Punjabi Songs</a></li>
 				<li><a href="hariyanvi.html">Hariyanvi Songs</a></li>
-				<li><a href="garhwali.html">Garhwali songs</a></li>
-				<li><a href="kumauni.html">Kumauni Songs</a></li>
+				<li><a href="Garhwali.html">Garhwali songs</a></li>
+				<li><a href="Kumauni.html">Kumauni Songs</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<br><br>
-			</ul>
-		</nav>
-		<br>
+			</ul	
+		</nav><br>
 		
-		<button id="loginButton">login</button>
 		<button id="randomSongButton">Random Song</button>
 		<input type="text" id="lyricsSearch" placeholder="Search lyrics...">
-		<label class="switch">
-			<input type="checkbox" id="themeToggle"
-			<span class="slider round"></span>
-		<button id="darkModeToggle">Dark Mode</button>
+		
 		<section id="language">
-			<h2>Language Option</h2>
+			<h2>Language</h2>
 			<select id="languageSelect">
 				<option value="en">English</Option>
 				<option value="hn">Hindi</Option>
@@ -49,29 +44,31 @@
 		</section>	
 	</header>
 	
-	    <div class="main">
-        <marquee class="marq" bgcolor="white" 
-         direction="left" loop="">
-         <div class="geek1">
-           <b><em> Information: This Website is in Production and Testing....</em></b>
-         </div>
-        </marquee>
-    </div>
-	
 	<main>
+		<div class="main">
+			<marquee class="marq" bgcolor="white" direction="left" loop="">
+				<div class="geek1">
+					<b><em> Information: This Website is in Production and Testing...</em><b>
+				</div>
+			</marquee>
+		</div>
+		
+		<div id="error">
+			<h1>Oops! Something went wrong.</h1>
+			<p>We apologize for the inconvenience. Please try again later</p>
+		</div>
+			<!-- Your existing content here -->
+		
 		<section id="audio-player">
-			<h2>Song Previews</h2>
-			<audio controls>
-				<source src="E:/coding folder/Lyrics Web/New lyrics sites/song-preview.mp3" type="audio/mpeg">
-				your browser does not support the audio element.
-			</audio>
+			<iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?
+			url=https://api.soundcloud.com/tracks/1530221236&color=#ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true"></iframe>
 		</section>
-
+				
 		<h2>Welcome to the EchoVerse</h2>
 		<input type="text" id="search" placeholder="search for a song...">
 				
 		<section id="search-suggestions">
-			<h2>Search suggestions</h2>
+			<h2><hr>Search suggestions<hr><hr></h2>
 			<ul id="suggestionList">
 				<!-- suggestions will be dynamically added here -->
 			</ul>
@@ -84,7 +81,7 @@
 		</ul>
 		
 		<section id="related-songs">
-			<h2>Related Songs</h2>
+			<h2><hr>Related Songs<hr><hr></h2>
 			<ul class="related-songs-list">
 				<li>Related Song 1</li>
 				<li>Related Song 2</li>
@@ -94,19 +91,31 @@
 		</section>
 
 		<section id="gallery">
-			<h2>Artist Gallery</h2>
+			<h2><hr>Artist Gallery<hr><hr></h2>
 			<div class="gallery-container">
 				<div class="gallery-item">
-				<img src="E:/coding folder/Lyrics Web/New lyrics sites/images/cheques.jpg" alt="cheques song lyrics - subh">
-				<p>Artist : Shubh</p>
+					<img src="E:/coding folder/Lyrics Web/New lyrics sites/images/arijit-singh.jpg" alt="Arijit Singh">
+				<b><p>"Arijit Singh" - Lyrics</p></b>
 				</div>
-				<div class="gallery-item'>
-					<img src="image/artist2.jpg" alt="Artist 2">
-					<p>Artist 2</p>
+				<div class="gallery-item">
+					<img src="E:/coding folder/Lyrics Web/New lyrics sites/images/badshah.jpg" alt="Badshah">
+				<b><p>"Badshah" - Lyrics</p><b>
 				</div>
-				<div class="gallery-item'>
-					<img src="image/artist3.jpg" alt="Artist 3">
-					<p>Artist 3</p>
+				<div class="gallery-item">
+					<img src="E:/coding folder/Lyrics Web/New lyrics sites/images/honey-singh.jpg" alt="Artist 3">
+					<b><p>"Honey Singh" - Lyrics</p><b>
+				</div>
+				<div class="gallery-item">
+					<img src="E:/coding folder/Lyrics Web/New lyrics sites/images/raftaar.jpg" alt="Artist 3">
+					<b><p>"Raftaar" - Lyrics</p><b>
+				</div>
+				<div class="gallery-item">
+					<img src="E:/coding folder/Lyrics Web/New lyrics sites/images/honey-singh.jpg" alt="Artist 3">
+					<b><p>"Honey Singh" - Lyrics</p><b>
+				</div>
+								<div class="gallery-item">
+					<img src="E:/coding folder/Lyrics Web/New lyrics sites/images/honey-singh.jpg" alt="Artist 3">
+					<b><p>"Honey Singh" - Lyrics</p><b>
 				</div>
 				<!-- Add more items as needed -->
 			</div>
@@ -119,7 +128,7 @@
 					<h3>Song Title 1</h3>
 					<img src="song1.jpg" alt="Song 1" loading="lazy">
 					<p>Lyrics for Song 1...</p>
-					<button class="bookmark-btn">Bookmark</button>
+					
 				</li>
 				<li>
 					<h3>Song Title 2</h3>
@@ -181,15 +190,15 @@
 		<section id="faq">
 			<h2>Frequently Asked Questions</h2>
 			<div class="faq-item">
-				<h3>How do I search for lyrics?</h3>
+				<h3><li>How do I search for lyrics?</li></h3>
 				<p>Use the search bar at the top of the page to find lyrics by song title or artist.</p>
 			</div>
 			<div class="faq-item">
-				<h3>Can I share lyrics on social media?</h3>
+				<h3><li>Can I share lyrics on social media?</li></h3>
 				<p>Yes, you can share lyrics on X and Facebook using the share button in the lyrics modal.</p>
 			</div>
 			<div class="faq-item">
-				<h3>How can I contact you?</h3>
+				<h3><li>How can I contact you?</li></h3>
 				<p>You can use the 'Contact Us' button to open the contact form and send us a Message.</p>
 			</div>
 			<!-- Add more FAQ as needed -->
@@ -198,7 +207,7 @@
 		<section id="newsletter">
 			<h2>Subscribe to our Newsletter</h2>
 			<form id="newsletterForm">
-				<input type="email" id="neasletterEmail" placeholder="Enter your email" required>
+				<input type="email" id="newsletterEmail" placeholder="Enter your email" required>
 				<button type="submit">Subscribe</button>
 			</form>
 		</section>
@@ -221,15 +230,16 @@
 			</div>
 		</div>
 
-			<section id="social-share">
-				<h2>Share This Song</h2>
-				<div>
-					<button id="shareOnX">Share on X</button>
-					<button id="shareOnFacebook">Share on Facebook</button>
-				</div>
-			</section>
-			
-
+		<section id="share-song">
+			<h2>Share This Song</h2>
+			<a id="share-twitter" href="#" target="_blank" title="Share on X">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a id="share-facebook" href="#" target="_blank" title="Share on Facebook">
+				<i class="fab fa-facebook-f"></i> Share on Facebook
+			</a>
+		</section>
+		
 		<!-- Add a button to open the contact modal -->
 		<button id="contactButton">Contact Us</buttom>
 		</section>
@@ -269,39 +279,25 @@
 				</div>
 				<span id="averageRating">4.5</span>
 			</div>		
-			<div class="social-share">
-				<button onclick="shareOnX()">Share on X</button>
-				<button onclick="shareOnFacebook()">Share on Facebook</button>
-			</div>
-			
 			
 			<div id="likeSelection">
 				<button id="likebutton"><i class=fas fa-thumbs-up"></i> Like</button>
 				<span id="likeCount">0</span>
 			</div>
+			
 			<div id="commentSection">
-				<h3>Comments<h3>
+				<h3>Comments</h3>
 				<input type="text" id="commentSearch" placeholder="Search comments...">
-				<form id="commentform">
+				<form id="commentForm">
 					<input type="text" id="commenterName" placeholder="Your Name" required>
 					<textarea id="commentText" placeholder="Your Comment" required></textarea>
 					<button type="submit">Post Comment</button>
 				</form>
-				<ul id="commentList"></ul>
+				<ul id="commentL"></ul>
 			</div>
+			
 		</div>
 	</div>
-
-		<section id="user-profile">
-			<h2>User Profile</h2>
-			<div id="profileInfo">
-				<p>Name: Vinod K. Aditya</p>
-				<p>Email: Vaditya.00@hotmail.com</p>
-				<!-- Add more user information -->
-			<div>
-			<button id="editProfile">Edit Profile</button>
-			<button id="logout">Logout</button>
-		</section>
 
 		<section id="accessibility">
 			<h2>Accessibility Options</h2>
@@ -312,7 +308,6 @@
 			</ul>
 		</Section>
 
-
 		<section id="dark-mode">
 			<h2>Dark Mode</2>
 			<label class="Switch">
@@ -322,7 +317,7 @@
 		</section>
 		
 		<button id="darkModeToggle" class="tooltip">Toggle Dark Mode
-			<span class="tooltotext">Switch between light and dark mode</span>
+			<span class="tooltiptext">Switch between light and dark mode</span>
 		</button>
 		
 		<button id="backToTop" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
